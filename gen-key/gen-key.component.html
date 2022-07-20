@@ -1,0 +1,20 @@
+<div class="padding-box">
+    <div class="outbox">
+        <h1 class="title">Generate a key</h1>
+        <p class="desc margin-top-15">
+            This is a simple tool to generate a key for your application.
+        </p>
+        <div class="inner-box margin-it">
+            <div class="key-box">
+                <h1></h1>
+                <p class="key-text">{{(key === '') ? 'No key' : key}}</p>
+                <button class="icon-button" mat-icon-button (click)="copyToClipboard()">
+                    <mat-icon class="grey_color">
+                        file_copy
+                    </mat-icon>
+                </button>
+            </div>
+            <button class="button-style" mat-button (click)="generateKey()">Generate</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,142 @@
+.padding-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.button-style {
+    background-color : #951cff;
+    color : white;
+    font-weight: medium;
+    border-radius: 40px;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-inline: 20px;
+    padding-block: 10px;
+}
+
+.desc {
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-it {
+    margin-top: 29px;
+}
+
+.key-box {
+    width: 700px;
+    min-height: 50px;
+    border-radius: 15px;
+    border: rgba(0, 0, 0, 0.46) 2px solid;
+    border-style: dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.04);
+}
+
+.title {
+    font-size: 40px;
+    font-weight: medium;
+}
+
+.key-text {
+    margin-top: 10px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    overflow-wrap: break-word;
+    margin-left: 40px;
+}
+
+.grey_color {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.inner-box {
+    background-color: white;
+    display: flex;
+    border: solid lightgrey 1px;
+    border-radius: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 244px;
+    padding-block: 20px;
+}
+
+.icon-button {
+    margin-right: 5px;
+}
+
+.outbox {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+
+@media only screen and (max-width: 850px) {
+    .key-box {
+        width: 500px;
+    }
+
+    .key-text {
+        max-width: 400px;
+    }
+
+    .outbox {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .key-box {
+        width: 300px;
+    }
+
+    .key-text {
+        max-width: 200px;
+    }
+
+    .outbox {
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .title {
+        font-size: 30px;
+    }
+
+    .desc {
+        font-size: 15px;
+    }
+
+    .key-box {
+        width: 250px;
+    }
+
+    .key-text {
+        max-width: 100px;
+        font-size: medium;
+    }
+
+    .outbox {
+        width: 300px;
+    }
+
+    .inner-box {
+        padding-block: 20px;
+        min-height: 230px;
+    }
+}
